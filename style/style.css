@@ -118,5 +118,125 @@ button img {
   justify-content: center;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 625px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .box {
+    background-color: #fff;
+    width: 343px;
+    height: 611px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-img {
+    width: 343px;
+    height: 240px;
+    background-image: url(../imgs/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+  }
+
+  .description {
+    width: 343px;
+    height: 371px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  #subtitle {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6c7289;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+
+  #title {
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 32px;
+  }
+
+  #description {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c7289;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+
+  #value {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #valueSale {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 32px;
+    color: #3d8168;
+    line-height: 32px;
+  }
+
+  #original {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6c7289;
+    text-decoration: line-through;
+  }
+
+  button {
+    width: 295px;
+    height: 48px;
+    border: none;
+    color: #fff;
+    background-color: #3d8168;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button:active {
+    background-color: #1a4032;
+    transition: all 0.2s;
+  }
+
+  button img {
+    display: flex;
+    gap: 11.61px;
+    align-items: center;
+    justify-content: center;
+  }
 }
